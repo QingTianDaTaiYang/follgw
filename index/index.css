@@ -1,0 +1,422 @@
+a {
+    text-decoration:none;
+    color: #fff;
+}
+body {
+    margin: 0;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+/* 电脑端页面 */
+.pc-box {
+    display: none;
+    min-width: 1527px;
+    overflow-x: auto;
+    padding-top: 50px;
+}
+/* 导航条 */
+.nav {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    min-width: 1150px;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 180px;
+    padding-left: 220px;
+    height: 50px;
+    color: #231916;
+    background-color: #E7F6FD;
+}
+.nav-a-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-box {
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor:pointer;
+    color: #231916;
+    font-weight: bold;
+}
+.nav-box-border {
+    margin: 0 auto;
+    width: 40px;
+    height:2px;
+    background-color:#E7F6FD;
+}
+.nav-box-border:hover {
+}
+.nav-box:hover .nav-box-border {
+    background-color:#231916;
+    /* border-bottom: 2px solid #231916; */
+}
+/* 导航条结束 */
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 780px;
+
+}
+.header-img {
+    width: 100%;
+    margin-top: -100px;
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+}
+.header-box-left {
+    width: 510px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 16px;
+    cursor:default;
+}
+.header-left-icon {
+    width: 69px;
+}
+.header-left-title {
+    margin: 20px 0;
+    line-height: 56px;
+    color: #231916;
+    font-size:28px;
+}
+.header-left-code {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.header-left-text {
+    line-height: 33px;
+    color: #231916;
+    font-size:24px;
+}
+.header-box-right {
+
+}
+.header-right-img {
+    width: 510px;
+    margin-top: -50px;
+    padding-right: 16px;
+}
+
+/* 功能介绍 */
+.introduce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin-top: 100px;
+    margin: 0 auto;
+    cursor:default;
+}
+.introduce-left-img {
+    width: 470px;
+}
+
+.introduce-right-title {
+    color: #231916;
+    font-size:30px;
+    font-weight: 600;
+}
+.introduce-right-text {
+    margin-top: 20px;
+    color: #555;
+    font-size:20px;
+    white-space: nowrap;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    /* -10px是因为UI切的图不整齐，为了避免缝隙，往上移一点，视觉上去掉缝隙 */
+    margin-top: -10px;
+    background-color: #E7F6FD;
+}
+
+.pc-bottom-box {
+    padding: 0 500px;
+    background-color: #E7F6FD;
+    box-sizing: border-box;
+}
+.pc-bottom {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-top: 1px solid #D8D8D8;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 450px;
+    cursor:default;
+}
+.chat-box {
+    width: 300px;
+    text-align: center;
+}
+.chat-img {
+    width: 80px;
+    height: 80px;
+}
+.chat-text {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* 右侧悬浮窗 */
+.header-fixed-left {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    cursor:default;
+}
+.fixed-left-icon {
+    width: 40px;
+}
+.fixed-left-title {
+    margin: 10px 0;
+    color: #231916;
+    font-size:22px;
+}
+.fixed-left-code {
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 5px 8px 1px rgba(0,0,0,0.1);
+}
+.fixed-left-text {
+    color: #231916;
+    font-size:18px;
+    text-align: center;
+}
+.go-top-img {
+    margin-top: 45px;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* 手机端 */
+#iphone-box {
+    display: none;
+    box-sizing: border-box;
+    width: 100vw;
+    
+}
+.iphone-header {
+    width: 100%;
+    padding: 10px 40px 20px;
+    box-sizing: border-box;
+    background-color:#E7F6FD;
+}
+.one-box {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+    margin: 0 auto;
+}
+.one-box-img {
+    width: 50px;
+}
+.one-box-text {
+    margin-left: 10px;
+    color: #333;
+    font-size: 18px;
+}
+.one-img-box {
+    width: 100%;
+}
+.one-img {
+    display: block;
+    width: 90%;
+    margin: 30px auto 0;
+}
+.iphone-header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.iphone-header-icon {
+    width: 40px;
+}
+.iphone-header-title {
+    margin: 10px 0;
+    color: #231916;
+    font-size:22px;
+}
+.iphone-header-code {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.iphone-header-text {
+    margin-top: 10px;
+    color: #231916;
+    font-size:18px;
+}
+
+/* 功能介绍 */
+.iphone-gnjs {
+    width: 100%;
+}
+.gnjs-one-box {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    color: #231916;
+}
+.gnjs-img-box {
+    width:100%;
+}
+.gnjs-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.iphone-dynamic {
+    width: 100%;
+}
+.gnjs-text-box {
+    margin: 30px 0;
+}
+.gnjs-box-title {
+    text-align: center;
+    font-size: 18px;
+    color: #231916;
+    font-weight: 600;
+}
+.gnjs-box-text {
+    color: #555555;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.iphone-search {
+    width: 100%;
+}
+.iphone-search-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.attention {
+    position: relative;
+    margin-top: 40px;
+}
+.attention-text {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+}
+.attention-text-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #231916;
+}
+.attention-text-text {
+    text-align: center;
+    color: #555555;
+}
+
+.trace {
+    position: relative;
+}
+.advantage {
+    width: 100%;
+    margin-top: -25px;
+    padding-bottom: 120px;
+    background-color:#E7F6FD;
+}
+.advantage-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.advantage-img {
+    width: 55px;
+    height: 55px;
+}
+.advantage-text {
+    font-size: 18px;
+}
+.iphone-bottom-box {
+    background-color: #E7F6FD;
+    box-sizing: border-box;
+}
+.iphone-bottom {
+    text-align: center;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 16px;
+    border-top: 1px solid #D8D8D8;
+}
+
+/* 手机端右侧悬浮窗 */
+#iphone-fixed-left {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+    cursor:default;
+    background-color: #fff;
+    box-shadow: 1px 5px 8px 1px rgba(0,0,0,0.1);
+
+}
+.iphone-left-code {
+    width: 130px;
+    height: 130px;
+    padding: 5px;
+    border-radius: 6px;
+    
+}
+.iphone-left-text {
+    color: #231916;
+    font-size:18px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
